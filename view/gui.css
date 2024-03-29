@@ -7,11 +7,22 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-style: italic;
+    font-weight: 400;
 }
 
+:root{
+    --cor1:#878787;
+    --cor2:#202022;
+    --cor3:#CACACA;
+    --cor4:#00747C;
+    --cor5:#00BBC9;
+}
+
+
 body {
-  background-color: #fff;
+  background-color: var(--cor3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,8 +35,8 @@ header, #Drawer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor2);
+    color: var(--cor3);
     text-align: center;
     padding: 5px 0;
     overflow: auto;
@@ -35,6 +46,7 @@ header, #Drawer {
     display: none;
     justify-content: space-evenly;
     top: 47px;
+    flex-wrap: wrap;
 }
 
 
@@ -56,52 +68,66 @@ header>#btnDrawer>button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
 }
 
 section {
-    
+    background-color: rgba(255, 255, 255, 0.678);
+    color: var(--cor2);
     width: 70vw;
-    min-height: 30vh;
+    min-height: 50vh;
+    max-height: 50vh;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
+    overflow: auto;
+}
+
+select,
+input[type="number"], #btnVendas {
+    width: 90%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-input[type="text"],
-input[type="number"],
-button {
-    display: block;
-    margin-bottom: 10px;
+#btnVendas:hover{
+    color: var(--cor5);
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor2);
+    color: var(--cor3);
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
+.btnNav:hover{
+    border: 1px solid var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor1);
+    color: var(--cor5);
 }
 
 #controle-estoque, #gerenciamento-clientes, #analise-desempenho{
     display: none;
 }
 
-#controle-estoque{
+#registro-vendas, #controle-estoque, #gerenciamento-clientes, #analise-desempenho{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#registro-vendas>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 table, tr, td, th{
@@ -109,4 +135,16 @@ table, tr, td, th{
     border-collapse: collapse;
     text-align: center;
     padding: 7px;
+}
+
+thead{
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+td{
+    background-color: var(--cor3);
+    color: black;
+    font-weight: 500;
+    
 }

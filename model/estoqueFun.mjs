@@ -4,6 +4,7 @@ import { estoque } from "../data/produtos.mjs";
 let mostrarEstoque = () => {
     const estoqueList = document.getElementById('estoque-list');
     estoqueList.innerHTML = '';
+    
     estoque.forEach(item => {
         const tr = document.createElement('tr');
         tr.innerHTML = `<td>${item.tipo}</td><td>${item.produto}</td><td> ${item.quantidade}</td>`;

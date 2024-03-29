@@ -6,6 +6,9 @@
     <title>Sistema de Gestão de Vendas</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./view/gui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -46,7 +49,18 @@
         <section id="gerenciamento-clientes" class="tela">
             <div>
                 <h2>Gerenciamento de Clientes</h2>
-                <ul id="clientes-list"></ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientes-list">
+                    
+                    </tbody>
+                </table>
             </div>
         </section>
         <section id="analise-desempenho" class="tela">
