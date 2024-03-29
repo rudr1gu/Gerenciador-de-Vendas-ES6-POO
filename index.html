@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Vendas</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./view/gui.css">
+</head>
+<body>
+    <header>
+        <div id="btnDrawer">
+            <button><i class='bx bxs-grid-alt'></i></button>
+        </div>
+        <h1>Sistema de Gestão de Vendas</h1>
+    </header>
+    <nav id="Drawer">
+        <button class="btnNav" data-target="registro-vendas">Registo de Vendas <i class='bx bx-cart-add'></i></button>
+        <button class="btnNav" data-target="controle-estoque">Controle de Estoque <i class='bx bxs-store-alt' ></i></button>
+        <button class="btnNav" data-target="gerenciamento-clientes">Gerenciamento de Clientes <i class='bx bxs-id-card'></i></button>
+        <button class="btnNav" data-target="analise-desempenho">Analise de Desempenho <i class='bx bx-bar-chart-square'></i></button>
+    </nav>
+    <div class="container">
+        <section id="registro-vendas" class="tela">
+            <div>
+                <h2>Registro de Vendas</h2>
+                <select id="produto"></select>
+                <input type="number" id="quantidade" placeholder="Quantidade">
+                <button id="btnVendas">Registrar Venda</button>
+            </div>
+        </section>
+        <section id="controle-estoque" class="tela">
+            <h2>Controle de Estoque</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="estoque-list">
+                </tbody>
+            </table>
+        </section>
+        <section id="gerenciamento-clientes" class="tela">
+            <div>
+                <h2>Gerenciamento de Clientes</h2>
+                <ul id="clientes-list"></ul>
+            </div>
+        </section>
+        <section id="analise-desempenho" class="tela">
+            <div>
+                <h2>Análise de Desempenho de Vendas</h2>
+                <p>Total de Vendas: <span id="total-vendas">0</span></p>
+                <p>Produto mais Vendido: <span id="produto-mais-vendido">Nenhum</span></p>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="./controller/app.js"></script>
+    <script type="module" src="main.js" async></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header, #Drawer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    overflow: auto;
+}
+
+#Drawer{
+    display: none;
+    justify-content: space-evenly;
+    top: 47px;
+}
+
+
+header>#btnDrawer{
+    position: absolute;
+    left: 0;
+}
+
+header>#btnDrawer>button{
+    font-size: 1.5em;
+}
+
+.btnNav{
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+section {
+    
+    width: 70vw;
+    min-height: 30vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+#controle-estoque, #gerenciamento-clientes, #analise-desempenho{
+    display: none;
+}
+
+#controle-estoque{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 7px;
+}
