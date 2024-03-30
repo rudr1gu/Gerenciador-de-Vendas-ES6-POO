@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- CSS media query -->
+    <link rel="stylesheet" media="(max-width: 650px)" href="./view/mediasqueries/mobile.css" />
+
 </head>
 <body>
     <header>
@@ -18,10 +21,10 @@
         <h1>Sistema de Gestão de Vendas</h1>
     </header>
     <nav id="Drawer">
-        <button class="btnNav" data-target="registro-vendas">Registo de Vendas <i class='bx bx-cart-add'></i></button>
-        <button class="btnNav" data-target="controle-estoque">Controle de Estoque <i class='bx bxs-store-alt' ></i></button>
-        <button class="btnNav" data-target="gerenciamento-clientes">Gerenciamento de Clientes <i class='bx bxs-id-card'></i></button>
-        <button class="btnNav" data-target="analise-desempenho">Analise de Desempenho <i class='bx bx-bar-chart-square'></i></button>
+        <button class="btnNav" data-target="registro-vendas"><p>Registo de Vendas</p> <i class='bx bx-cart-add'></i></button>
+        <button class="btnNav" data-target="controle-estoque"><p>Controle de Estoque</p> <i class='bx bxs-store-alt' ></i></button>
+        <button class="btnNav" data-target="gerenciamento-clientes"><p>Gerenciamento de Clientes</p> <i class='bx bxs-id-card'></i></button>
+        <button class="btnNav" data-target="analise-desempenho"><p>Analise de Desempenho</p> <i class='bx bx-bar-chart-square'></i></button>
     </nav>
     <div class="container">
         <section id="registro-vendas" class="tela">

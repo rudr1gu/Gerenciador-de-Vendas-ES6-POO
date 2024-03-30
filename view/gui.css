@@ -60,7 +60,9 @@ header>#btnDrawer>button{
 }
 
 .btnNav{
-    font-size: 1.2em;
+    display: flex;
+    font-size: 1em;
+    
 }
 
 .container {
@@ -75,7 +77,7 @@ section {
     color: var(--cor2);
     width: 70vw;
     min-height: 50vh;
-    max-height: 50vh;
+    max-height: 70vh;
     padding: 10px;
     border: 1px solid var(--cor1);
     border-radius: 10px;
@@ -121,6 +123,10 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#registro-vendas{
+    display: flex;
 }
 
 #registro-vendas>div{

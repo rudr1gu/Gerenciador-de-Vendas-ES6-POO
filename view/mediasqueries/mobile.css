@@ -1,0 +1,21 @@
+body{
+    background-color: var(--cor2);
+    font-size: 0.6em;
+}
+
+.btnNav>p{
+    display: none;
+}
+
+.btnNav{
+    font-size: 2em;
+}
+
+#Drawer{
+    border-bottom: 1px solid var(--cor1);
+}
+
+section{
+    width: 90vw;
+    min-height: 50vh;
+}
