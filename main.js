@@ -1,7 +1,8 @@
-import { clientes } from "./data/clientes.mjs";
+// import { clientes } from "./data/clientes.mjs";
 import { estoque } from "./data/produtos.mjs";
-import { mostrarEstoque, mostrarProdutos } from "./model/estoqueFun.mjs";
-import { mostrarClientes } from "./model/clientesFun.mjs";
+import { mostrarEstoque, mostrarProdutos } from "./model/telaEstoque.mjs";
+import { mostrarClientes } from "./model/telaClientes.mjs";
+
 
 let vendas = [];
 
@@ -11,7 +12,7 @@ const btnRegisVendas = document.getElementById("btnVendas")
         registrarVenda();
     });
 
-// Função para registrar uma venda
+//Função para registrar uma venda
 let registrarVenda = () => {
     const produto = document.getElementById('produto').value;
     const quantidade = parseInt(document.getElementById('quantidade').value);
@@ -57,3 +58,6 @@ mostrarProdutos();
 mostrarEstoque();
 mostrarClientes();
 analisarDesempenho();
+
+export { vendas };
+export { analisarDesempenho };
