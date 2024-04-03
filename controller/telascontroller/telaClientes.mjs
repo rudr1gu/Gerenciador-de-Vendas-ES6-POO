@@ -1,4 +1,4 @@
-import { clientes } from "../data/clientes.mjs";
+import { clientes } from "../../model/clientes.mjs";
 
 // Função para mostrar os clientes
 let mostrarClientes = () => {

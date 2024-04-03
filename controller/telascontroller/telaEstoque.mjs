@@ -1,4 +1,4 @@
-import { estoque } from "../data/produtos.mjs";
+import { estoque } from "../../model/produtos.mjs";
 
 // Função para mostrar o estoque
 let mostrarEstoque = () => {

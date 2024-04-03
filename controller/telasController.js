@@ -1,7 +1,7 @@
 // import { clientes } from "./data/clientes.mjs";
-import { estoque } from "./data/produtos.mjs";
-import { mostrarEstoque, mostrarProdutos } from "./model/telaEstoque.mjs";
-import { mostrarClientes } from "./model/telaClientes.mjs";
+import { estoque } from "../model/produtos.mjs";
+import { mostrarEstoque, mostrarProdutos } from "./telascontroller/telaEstoque.mjs";
+import { mostrarClientes } from "./telascontroller/telaClientes.mjs";
 
 
 let vendas = [];
