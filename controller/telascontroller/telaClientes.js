@@ -1,4 +1,4 @@
-import { clientes } from "../../model/clientes.mjs";
+import { clientes } from "../../model/clientes.js";
 
 class Clientes{
     mostrarClientes = () => {

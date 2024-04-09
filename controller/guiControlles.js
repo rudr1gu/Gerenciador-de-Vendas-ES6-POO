@@ -1,5 +1,6 @@
-import { Header } from "./appcontroller/header.mjs";
-import {Nav, telas} from "./appcontroller/nav.mjs";
+console.log("teste123")
+import { Header } from "./appcontroller/header.js";
+import {Nav, telas} from "./appcontroller/nav.js";
 
 //Botão do header para abrir menu nav
 const header = new Header();

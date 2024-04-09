@@ -1,4 +1,4 @@
-import { estoque } from "../../model/produtos.mjs";
+import { estoque } from "../../model/produtos.js";
 
 class Produto{
     // Função para mostrar o estoque

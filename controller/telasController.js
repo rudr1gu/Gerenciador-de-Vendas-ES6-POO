@@ -1,7 +1,7 @@
-import { estoque } from "../model/produtos.mjs";
-import { Produto } from "./telascontroller/telaEstoque.mjs";
-import { Clientes } from "./telascontroller/telaClientes.mjs";
-import { Analise } from "./telascontroller/telaAnalise.mjs";
+import { estoque } from "../model/produtos.js";
+import { Produto } from "./telascontroller/telaEstoque.js";
+import { Clientes } from "./telascontroller/telaClientes.js";
+import { Analise } from "./telascontroller/telaAnalise.js";
 
 
 const clientes1 = new Clientes();
